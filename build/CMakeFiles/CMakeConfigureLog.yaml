@@ -1,0 +1,880 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      The system is: Linux - 6.6.2-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/sbin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/3.27.8/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/sbin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/3.27.8/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-SguuV5"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-SguuV5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-SguuV5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_7d949/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_7d949.dir/build.make CMakeFiles/cmTC_7d949.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-SguuV5'
+        Building C object CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o
+        /usr/sbin/cc   -v -o CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/sbin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,objc,obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20230801 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7d949.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7d949.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccXTNKAu.s
+        GNU C17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.2.1 20230801, GMP version 6.3.0, MPFR version 4.2.0-p12, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        warning: MPFR header version 4.2.0-p12 differs from library version 4.2.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 865c2688a4f1e3f13d6bf2cc8fd98762
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7d949.dir/'
+         as -v --64 -o CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o /tmp/ccXTNKAu.s
+        GNU assembler version 2.41.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.41.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_7d949
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d949.dir/link.txt --verbose=1
+        /usr/sbin/cc  -v -rdynamic CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o -o cmTC_7d949 
+        Using built-in specs.
+        COLLECT_GCC=/usr/sbin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,objc,obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20230801 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7d949' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7d949.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7onxYK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7d949 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7d949' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7d949.'
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-SguuV5'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-SguuV5']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_7d949/fast]
+        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_7d949.dir/build.make CMakeFiles/cmTC_7d949.dir/build]
+        ignore line: [make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-SguuV5']
+        ignore line: [Building C object CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/sbin/cc   -v -o CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/sbin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto objc obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20230801 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7d949.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_7d949.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccXTNKAu.s]
+        ignore line: [GNU C17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.1 20230801  GMP version 6.3.0  MPFR version 4.2.0-p12  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.0-p12 differs from library version 4.2.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 865c2688a4f1e3f13d6bf2cc8fd98762]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7d949.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o /tmp/ccXTNKAu.s]
+        ignore line: [GNU assembler version 2.41.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.41.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_7d949]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d949.dir/link.txt --verbose=1]
+        ignore line: [/usr/sbin/cc  -v -rdynamic CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o -o cmTC_7d949 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/sbin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto objc obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20230801 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_7d949' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7d949.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc7onxYK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_7d949 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc7onxYK.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_7d949] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..]
+          arg [CMakeFiles/cmTC_7d949.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-h7A9IU"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-h7A9IU"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-h7A9IU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_3556c/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_3556c.dir/build.make CMakeFiles/cmTC_3556c.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-h7A9IU'
+        Building CXX object CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/sbin/c++   -v -o CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/sbin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,objc,obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20230801 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3556c.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3556c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccrssayv.s
+        GNU C++17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.2.1 20230801, GMP version 6.3.0, MPFR version 4.2.0-p12, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        warning: MPFR header version 4.2.0-p12 differs from library version 4.2.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/x86_64-pc-linux-gnu
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/backward
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 5a490a353c29b926850bca65a518c219
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3556c.dir/'
+         as -v --64 -o CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccrssayv.s
+        GNU assembler version 2.41.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.41.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_3556c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3556c.dir/link.txt --verbose=1
+        /usr/sbin/c++  -v -rdynamic CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3556c 
+        Using built-in specs.
+        COLLECT_GCC=/usr/sbin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,objc,obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20230801 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3556c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3556c.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4x25MM.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_3556c /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3556c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3556c.'
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-h7A9IU'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/x86_64-pc-linux-gnu]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/backward]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1] ==> [/usr/include/c++/13.2.1]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/13.2.1/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/backward] ==> [/usr/include/c++/13.2.1/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13.2.1;/usr/include/c++/13.2.1/x86_64-pc-linux-gnu;/usr/include/c++/13.2.1/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:25 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-h7A9IU']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_3556c/fast]
+        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_3556c.dir/build.make CMakeFiles/cmTC_3556c.dir/build]
+        ignore line: [make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-h7A9IU']
+        ignore line: [Building CXX object CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/sbin/c++   -v -o CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/sbin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto objc obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20230801 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3556c.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3556c.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccrssayv.s]
+        ignore line: [GNU C++17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.1 20230801  GMP version 6.3.0  MPFR version 4.2.0-p12  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [warning: MPFR header version 4.2.0-p12 differs from library version 4.2.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 5a490a353c29b926850bca65a518c219]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3556c.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccrssayv.s]
+        ignore line: [GNU assembler version 2.41.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.41.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_3556c]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3556c.dir/link.txt --verbose=1]
+        ignore line: [/usr/sbin/c++  -v -rdynamic CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3556c ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/sbin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto objc obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20230801 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3556c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3556c.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc4x25MM.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_3556c /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc4x25MM.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_3556c] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..]
+          arg [CMakeFiles/cmTC_3556c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:63 (check_symbol_exists)"
+    checks:
+      - "Looking for __i386"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-bSdoCa"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-bSdoCa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jesse/cpp/teeworlds-0.6.5-src/cmake"
+    buildResult:
+      variable: "TARGET_ARCH_X86_i386"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-bSdoCa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_2c8c8/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_2c8c8.dir/build.make CMakeFiles/cmTC_2c8c8.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-bSdoCa'
+        Building C object CMakeFiles/cmTC_2c8c8.dir/CheckSymbolExists.c.o
+        /usr/sbin/cc    -o CMakeFiles/cmTC_2c8c8.dir/CheckSymbolExists.c.o -c /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-bSdoCa/CheckSymbolExists.c
+        /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-bSdoCa/CheckSymbolExists.c: In function ‘main’:
+        /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-bSdoCa/CheckSymbolExists.c:7:19: error: ‘__i386’ undeclared (first use in this function)
+            7 |   return ((int*)(&__i386))[argc];
+              |                   ^~~~~~
+        /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-bSdoCa/CheckSymbolExists.c:7:19: note: each undeclared identifier is reported only once for each function it appears in
+        make[1]: *** [CMakeFiles/cmTC_2c8c8.dir/build.make:78: CMakeFiles/cmTC_2c8c8.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-bSdoCa'
+        make: *** [Makefile:127: cmTC_2c8c8/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:108 (check_c_compiler_flag)"
+      - "CMakeLists.txt:121 (add_c_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_fstack_protector_all"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-a9zSd8"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-a9zSd8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jesse/cpp/teeworlds-0.6.5-src/cmake"
+    buildResult:
+      variable: "FLAG_SUPPORTED_fstack_protector_all"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-a9zSd8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_4bfe5/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_4bfe5.dir/build.make CMakeFiles/cmTC_4bfe5.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-a9zSd8'
+        Building C object CMakeFiles/cmTC_4bfe5.dir/src.c.o
+        /usr/sbin/cc -DFLAG_SUPPORTED_fstack_protector_all  -fstack-protector-all -o CMakeFiles/cmTC_4bfe5.dir/src.c.o -c /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-a9zSd8/src.c
+        Linking C executable cmTC_4bfe5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bfe5.dir/link.txt --verbose=1
+        /usr/sbin/cc -rdynamic CMakeFiles/cmTC_4bfe5.dir/src.c.o -o cmTC_4bfe5 
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-a9zSd8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:108 (check_c_compiler_flag)"
+      - "CMakeLists.txt:136 (add_c_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wall"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-jDQdZa"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-jDQdZa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jesse/cpp/teeworlds-0.6.5-src/cmake"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-jDQdZa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_468e3/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_468e3.dir/build.make CMakeFiles/cmTC_468e3.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-jDQdZa'
+        Building C object CMakeFiles/cmTC_468e3.dir/src.c.o
+        /usr/sbin/cc -DFLAG_SUPPORTED_Wall  -Wall -o CMakeFiles/cmTC_468e3.dir/src.c.o -c /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-jDQdZa/src.c
+        Linking C executable cmTC_468e3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_468e3.dir/link.txt --verbose=1
+        /usr/sbin/cc -rdynamic CMakeFiles/cmTC_468e3.dir/src.c.o -o cmTC_468e3 
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-jDQdZa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:108 (check_c_compiler_flag)"
+      - "CMakeLists.txt:138 (add_c_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wdeclaration_after_statement"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-1ByoKU"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-1ByoKU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jesse/cpp/teeworlds-0.6.5-src/cmake"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wdeclaration_after_statement"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-1ByoKU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_3358d/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_3358d.dir/build.make CMakeFiles/cmTC_3358d.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-1ByoKU'
+        Building C object CMakeFiles/cmTC_3358d.dir/src.c.o
+        /usr/sbin/cc -DFLAG_SUPPORTED_Wdeclaration_after_statement  -Wdeclaration-after-statement -o CMakeFiles/cmTC_3358d.dir/src.c.o -c /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-1ByoKU/src.c
+        Linking C executable cmTC_3358d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3358d.dir/link.txt --verbose=1
+        /usr/sbin/cc -rdynamic CMakeFiles/cmTC_3358d.dir/src.c.o -o cmTC_3358d 
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-1ByoKU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:108 (check_c_compiler_flag)"
+      - "CMakeLists.txt:143 (add_c_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wextra"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-1478BH"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-1478BH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jesse/cpp/teeworlds-0.6.5-src/cmake"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-1478BH'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_201c6/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_201c6.dir/build.make CMakeFiles/cmTC_201c6.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-1478BH'
+        Building C object CMakeFiles/cmTC_201c6.dir/src.c.o
+        /usr/sbin/cc -DFLAG_SUPPORTED_Wextra  -Wextra -o CMakeFiles/cmTC_201c6.dir/src.c.o -c /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-1478BH/src.c
+        Linking C executable cmTC_201c6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_201c6.dir/link.txt --verbose=1
+        /usr/sbin/cc -rdynamic CMakeFiles/cmTC_201c6.dir/src.c.o -o cmTC_201c6 
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-1478BH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:108 (check_c_compiler_flag)"
+      - "CMakeLists.txt:144 (add_c_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wno_unused_parameter"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-8mXJ8f"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-8mXJ8f"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jesse/cpp/teeworlds-0.6.5-src/cmake"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wno_unused_parameter"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-8mXJ8f'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_48eb0/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_48eb0.dir/build.make CMakeFiles/cmTC_48eb0.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-8mXJ8f'
+        Building C object CMakeFiles/cmTC_48eb0.dir/src.c.o
+        /usr/sbin/cc -DFLAG_SUPPORTED_Wno_unused_parameter  -Wno-unused-parameter -o CMakeFiles/cmTC_48eb0.dir/src.c.o -c /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-8mXJ8f/src.c
+        Linking C executable cmTC_48eb0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48eb0.dir/link.txt --verbose=1
+        /usr/sbin/cc -rdynamic CMakeFiles/cmTC_48eb0.dir/src.c.o -o cmTC_48eb0 
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-8mXJ8f'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:108 (check_c_compiler_flag)"
+      - "CMakeLists.txt:145 (add_c_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wno_missing_field_initializers"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-Isv4uQ"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-Isv4uQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jesse/cpp/teeworlds-0.6.5-src/cmake"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wno_missing_field_initializers"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-Isv4uQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_ef3ee/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_ef3ee.dir/build.make CMakeFiles/cmTC_ef3ee.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-Isv4uQ'
+        Building C object CMakeFiles/cmTC_ef3ee.dir/src.c.o
+        /usr/sbin/cc -DFLAG_SUPPORTED_Wno_missing_field_initializers  -Wno-missing-field-initializers -o CMakeFiles/cmTC_ef3ee.dir/src.c.o -c /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-Isv4uQ/src.c
+        Linking C executable cmTC_ef3ee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef3ee.dir/link.txt --verbose=1
+        /usr/sbin/cc -rdynamic CMakeFiles/cmTC_ef3ee.dir/src.c.o -o cmTC_ef3ee 
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-Isv4uQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:108 (check_c_compiler_flag)"
+      - "CMakeLists.txt:146 (add_c_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wformat_2"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-7AKiwz"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-7AKiwz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jesse/cpp/teeworlds-0.6.5-src/cmake"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wformat_2"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-7AKiwz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_e1d2a/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_e1d2a.dir/build.make CMakeFiles/cmTC_e1d2a.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-7AKiwz'
+        Building C object CMakeFiles/cmTC_e1d2a.dir/src.c.o
+        /usr/sbin/cc -DFLAG_SUPPORTED_Wformat_2  -Wformat=2 -o CMakeFiles/cmTC_e1d2a.dir/src.c.o -c /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-7AKiwz/src.c
+        Linking C executable cmTC_e1d2a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1d2a.dir/link.txt --verbose=1
+        /usr/sbin/cc -rdynamic CMakeFiles/cmTC_e1d2a.dir/src.c.o -o cmTC_e1d2a 
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-7AKiwz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:108 (check_c_compiler_flag)"
+      - "CMakeLists.txt:147 (add_c_compiler_flag_if_supported)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wno_implicit_function_declaration"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-jRTVlQ"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-jRTVlQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jesse/cpp/teeworlds-0.6.5-src/cmake"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wno_implicit_function_declaration"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-jRTVlQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_985d0/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_985d0.dir/build.make CMakeFiles/cmTC_985d0.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-jRTVlQ'
+        Building C object CMakeFiles/cmTC_985d0.dir/src.c.o
+        /usr/sbin/cc -DFLAG_SUPPORTED_Wno_implicit_function_declaration  -Wno-implicit-function-declaration -o CMakeFiles/cmTC_985d0.dir/src.c.o -c /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-jRTVlQ/src.c
+        Linking C executable cmTC_985d0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_985d0.dir/link.txt --verbose=1
+        /usr/sbin/cc -rdynamic CMakeFiles/cmTC_985d0.dir/src.c.o -o cmTC_985d0 
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-jRTVlQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:151 (check_c_compiler_flag)"
+    checks:
+      - "Performing Test DEFINE_FORTIFY_SOURCE"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-CZraMY"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-CZraMY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jesse/cpp/teeworlds-0.6.5-src/cmake"
+    buildResult:
+      variable: "DEFINE_FORTIFY_SOURCE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-CZraMY'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_6ade3/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_6ade3.dir/build.make CMakeFiles/cmTC_6ade3.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-CZraMY'
+        Building C object CMakeFiles/cmTC_6ade3.dir/src.c.o
+        /usr/sbin/cc -DDEFINE_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2  -O2 -Wp,-Werror -o CMakeFiles/cmTC_6ade3.dir/src.c.o -c /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-CZraMY/src.c
+        Linking C executable cmTC_6ade3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ade3.dir/link.txt --verbose=1
+        /usr/sbin/cc -rdynamic CMakeFiles/cmTC_6ade3.dir/src.c.o -o cmTC_6ade3 
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-CZraMY'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:261 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-LtN1z7"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-LtN1z7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jesse/cpp/teeworlds-0.6.5-src/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-LtN1z7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_eda16/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_eda16.dir/build.make CMakeFiles/cmTC_eda16.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-LtN1z7'
+        Building C object CMakeFiles/cmTC_eda16.dir/src.c.o
+        /usr/sbin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_eda16.dir/src.c.o -c /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-LtN1z7/src.c
+        Linking C executable cmTC_eda16
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eda16.dir/link.txt --verbose=1
+        /usr/sbin/cc -rdynamic CMakeFiles/cmTC_eda16.dir/src.c.o -o cmTC_eda16 
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-LtN1z7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:713 (check_symbol_exists)"
+    checks:
+      - "Looking for WavpackOpenFileInputEx"
+    directories:
+      source: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-hXSv5o"
+      binary: "/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-hXSv5o"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/jesse/cpp/teeworlds-0.6.5-src/cmake"
+    buildResult:
+      variable: "WAVPACK_OPEN_FILE_INPUT_EX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-hXSv5o'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_5166e/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_5166e.dir/build.make CMakeFiles/cmTC_5166e.dir/build
+        make[1]: Entering directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-hXSv5o'
+        Building C object CMakeFiles/cmTC_5166e.dir/CheckSymbolExists.c.o
+        /usr/sbin/cc  -I/usr/include/wavpack  -o CMakeFiles/cmTC_5166e.dir/CheckSymbolExists.c.o -c /home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-hXSv5o/CheckSymbolExists.c
+        Linking C executable cmTC_5166e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5166e.dir/link.txt --verbose=1
+        /usr/sbin/cc -rdynamic CMakeFiles/cmTC_5166e.dir/CheckSymbolExists.c.o -o cmTC_5166e  /usr/lib/libwavpack.so 
+        make[1]: Leaving directory '/home/jesse/cpp/teeworlds-0.6.5-src/build/CMakeFiles/CMakeScratch/TryCompile-hXSv5o'
+        
+      exitCode: 0
+...
