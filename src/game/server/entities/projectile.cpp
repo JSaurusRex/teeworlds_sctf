@@ -5,7 +5,7 @@
 #include "projectile.h"
 
 CProjectile::CProjectile(CGameWorld *pGameWorld, int Type, int Owner, vec2 Pos, vec2 Dir, int Span,
-		int Damage, bool Explosive, float Force, int SoundImpact, int Weapon)
+		int Damage, bool Explosive, float Force, int SoundImpact, int Weapon, int shotId)
 : CEntity(pGameWorld, CGameWorld::ENTTYPE_PROJECTILE)
 {
 	m_Type = Type;
@@ -19,7 +19,8 @@ CProjectile::CProjectile(CGameWorld *pGameWorld, int Type, int Owner, vec2 Pos, 
 	m_Weapon = Weapon;
 	m_StartTick = Server()->Tick();
 	m_Explosive = Explosive;
-	m_Bounces = 3;
+	m_Bounces = 99;
+	m_shotId = shotId;
 
 	GameWorld()->InsertEntity(this);
 }
@@ -62,7 +63,7 @@ void CProjectile::Tick()
 	float Ct = (Server()->Tick()-m_StartTick)/(float)Server()->TickSpeed();
 	vec2 PrevPos = GetPos(Pt);
 	vec2 CurPos = GetPos(Ct);
-	int Collide = GameServer()->Collision()->IntersectLine(PrevPos, CurPos, &CurPos, 0);
+	int Collide = GameServer()->Collision()->IntersectLine(PrevPos, CurPos, 0, &CurPos);
 	CCharacter *OwnerChar = GameServer()->GetPlayerChar(m_Owner);
 	CCharacter *TargetChr = GameServer()->m_World.IntersectCharacter(PrevPos, CurPos, 6.0f, CurPos, OwnerChar);
 
@@ -70,17 +71,19 @@ void CProjectile::Tick()
 
 	if(TargetChr || Collide || m_LifeSpan < 0 || GameLayerClipped(CurPos))
 	{
-		if(m_Bounces > 0 && !TargetChr && Collide)
-		{
-			vec2 TempPos = CurPos;
-			vec2 TempDir = m_Direction * 4.0f;
-			GameServer()->Collision()->MovePoint(&TempPos, &TempDir, 1.0f, 0);
-			m_Pos = TempPos;
-			m_Direction = normalize(TempDir+vec2(rand() %  100 - 50, rand() % 100 - 50) / 10);
-			m_Bounces--;
-			m_StartTick = Server()->Tick();
-			return;
-		}
+		// GameServer()->CreateExplosion(CurPos, m_Owner, WEAPON_SHOTGUN, false);
+		// if(m_Bounces > 0 && !TargetChr && Collide && m_LifeSpan > 0)
+		// {
+		// 	vec2 TempPos = CurPos;
+		// 	vec2 TempDir = m_Direction * 4.0f;
+		// 	GameServer()->Collision()->MovePoint(&TempPos, &TempDir, 1.0f, 0);
+		// 	m_Pos = TempPos;
+		// 	m_Direction = normalize(TempDir+vec2(rand() %  100 - 50, rand() % 100 - 50) / 10);
+		// 	m_Direction = normalize(TempDir);
+		// 	m_Bounces--;
+		// 	m_StartTick = Server()->Tick();
+		// 	return;
+		// }
 		if(m_LifeSpan >= 0 || m_Weapon == WEAPON_GRENADE)
 			GameServer()->CreateSound(CurPos, m_SoundImpact);
 

@@ -331,7 +331,7 @@ void CCharacter::FireWeapon()
 				ProjStartPos,
 				Direction,
 				(int)(Server()->TickSpeed()*GameServer()->Tuning()->m_GunLifetime),
-				1, 0, 0, -1, WEAPON_GUN);
+				1, 0, 0, -1, WEAPON_GUN, 0);
 
 			GameServer()->CreateSound(m_Pos, SOUND_GUN_FIRE);
 		} break;
@@ -344,19 +344,22 @@ void CCharacter::FireWeapon()
 			// if(collision) GameServer()->CreateExplosion(exPos, m_pPlayer->GetCID(), WEAPON_SHOTGUN, false);
 			int ShotSpread = 2;
 
-			for(int i = -ShotSpread; i <= ShotSpread; ++i)
+			for(int j = 0; j < 1; j++)
 			{
-				float Spreading[] = {-0.185f, -0.070f, 0, 0.070f, 0.185f};
-				float a = GetAngle(Direction);
-				a += Spreading[i+2];
-				float v = 1-(absolute(i)/(float)ShotSpread);
-				float Speed = mix((float)GameServer()->Tuning()->m_ShotgunSpeeddiff, 1.0f, v);
-				CProjectile *pProj = new CProjectile(GameWorld(), WEAPON_SHOTGUN,
-					m_pPlayer->GetCID(),
-					ProjStartPos,
-					vec2(cosf(a), sinf(a))*Speed,
-					(int)(Server()->TickSpeed()*GameServer()->Tuning()->m_ShotgunLifetime),
-					2, 0, 0, -1, WEAPON_SHOTGUN);
+				for(int i = -ShotSpread; i <= ShotSpread; ++i)
+				{
+					float Spreading[] = {-0.185f, -0.070f, 0, 0.070f, 0.185f};
+					float a = GetAngle(Direction);
+					a += Spreading[i+2];
+					float v = 1-(absolute(i)/(float)ShotSpread);
+					float Speed = mix((float)GameServer()->Tuning()->m_ShotgunSpeeddiff, 1.0f, v);
+					CProjectile *pProj = new CProjectile(GameWorld(), WEAPON_SHOTGUN,
+						m_pPlayer->GetCID(),
+						ProjStartPos,
+						vec2(cosf(a), sinf(a))*Speed,
+						(int)(Server()->TickSpeed()*GameServer()->Tuning()->m_ShotgunLifetime),
+						2, 0, 0, -1, WEAPON_SHOTGUN, 0);
+				}
 			}
 
 			GameServer()->CreateSound(m_Pos, SOUND_SHOTGUN_FIRE);
@@ -369,7 +372,7 @@ void CCharacter::FireWeapon()
 				ProjStartPos,
 				Direction,
 				(int)(Server()->TickSpeed()*GameServer()->Tuning()->m_GrenadeLifetime),
-				1, true, 0, SOUND_GRENADE_EXPLODE, WEAPON_GRENADE);
+				1, true, 0, SOUND_GRENADE_EXPLODE, WEAPON_GRENADE, 0);
 
 			GameServer()->CreateSound(m_Pos, SOUND_GRENADE_FIRE);
 		} break;
@@ -547,7 +550,7 @@ void CCharacter::Tick()
 
 	// Previnput
 	m_PrevInput = m_Input;
-	if(Server()->Tick() % 50 * 1  == 0 && m_Health < 10)
+	if(Server()->Tick() % 50 * 2 == 0 && m_Health < 10)
 		m_Health++;
 	return;
 }
@@ -687,7 +690,12 @@ void CCharacter::Die(int Killer, int Weapon)
 
 	CCharacter* pKiller = GameServer()->GetPlayerChar(Killer);
 	if(pKiller)
-		pKiller->m_Health += 4;
+	{
+		if(pKiller->m_Health < 10)
+			pKiller->m_Health += 2;
+		if(pKiller->m_Armor < 10)
+			pKiller->m_Armor += 2;
+	}
 
 	// a nice sound
 	GameServer()->CreateSound(m_Pos, SOUND_PLAYER_DIE);
