@@ -552,6 +552,9 @@ void CCharacter::Tick()
 	m_PrevInput = m_Input;
 	if(Server()->Tick() % 50 * 2 == 0 && m_Health < 10)
 		m_Health++;
+	
+	if(Server()->Tick() % 50 * 3 == 0 && m_Armor > 0)
+		m_Armor--;
 	return;
 }
 
@@ -693,8 +696,11 @@ void CCharacter::Die(int Killer, int Weapon)
 	{
 		if(pKiller->m_Health < 10)
 			pKiller->m_Health += 2;
-		if(pKiller->m_Armor < 10)
+		if(pKiller->m_Armor < 4)
 			pKiller->m_Armor += 2;
+		
+		if(pKiller->m_Armor > 4)
+			pKiller->m_Armor = 4;
 	}
 
 	// a nice sound
